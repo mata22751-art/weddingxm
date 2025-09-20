@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación Boda Star Wars</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="starwars-bg"></div>
+  <section class="container">
+
+    <!-- Mensaje de bienvenida -->
+    <div class="welcome-msg">
+      <h1>¡Bienvenidos a nuestra boda!</h1>
+      <p>Nos alegra compartir este día tan especial contigo.</p>
+    </div>
+
+    <div class="starwars-intro">
+      <p class="intro-text">
+        ¡En una galaxia muy lejana, la boda del año será vista por todos!
+      </p>
+    </div>
+
+    <h2 class="names">Ximena & Marco</h2>
+    <p class="date">27 de diciembre 2025</p>
+
+    <div class="locations">
+      <h3>Misa</h3>
+      <p>Templo de la Santísima Trinidad</p>
+      <a href="https://share.google/WGLYfxE6YmKEI361w" target="_blank" class="btn">Ver ubicación</a>
+      <h3>Recepción</h3>
+      <p>Salón Quinta San Javier</p>
+      <a href="https://share.google/V1iWHLZtviwuIF0g5" target="_blank" class="btn">Ver ubicación</a>
+    </div>
+
+    <!-- Sección de Vestimenta -->
+    <div class="dresscode">
+      <h3>Vestimenta</h3>
+      <p class="formal"><strong>Formal</strong></p>
+      <p class="dress-warning">
+        <span>⚠️</span> Agradecemos que los invitados no vistan de <strong>blanco, marfil o champagne</strong>.
+      </p>
+    </div>
+
+    <div class="video-container">
+      <video controls autoplay loop>
+        <source src="https://mata22751-art.github.io/weddingxm/boda.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+
+    <!-- Música de fondo "Across the Stars" -->
+    <audio id="bgmusic" autoplay loop>
+      <source src="https://cdn.pixabay.com/audio/2022/11/16/audio_12fb0b5e8c.mp3" type="audio/mp3">
+      Tu navegador no soporta audio.
+    </audio>
+    <div class="music-controls">
+      <button id="music-toggle" class="btn">⏸ Pausar música</button>
+    </div>
+
+    <!-- GIF romántico de Anakin y Padmé -->
+    <div class="gif-container">
+      <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Anakin y Padmé" />
+    </div>
+
+    <!-- Frase romántica de Anakin -->
+    <div class="starwars-quote">
+      <blockquote>
+        "Ximena, estoy enamorado de ti. Por mucho tiempo lo he estado... Nunca dejaré de amarte."
+      </blockquote>
+    </div>
+
+    <div class="confirm">
+      <h3>¿Nos acompañas?</h3>
+      <form id="confirmation-form">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <label>
+          <input type="checkbox" name="acompanante"> Llevo acompañante
+        </label>
+        <button type="submit" class="btn">Confirmar asistencia</button>
+      </form>
+      <div id="response-msg"></div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
